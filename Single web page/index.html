@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abiola Akintola - Portfolio</title>
+    <link rel="stylesheet" href="./style.css"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="./script.js"></script>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="profile_name">
+            Abiola Akintola
+            <div class="contact_info">
+                <span class="material-icons">
+                    mail
+                </span>
+                abiola.akintola0184@gmail.com
+            </div>
+            <div class="contact_info">
+                <span class="material-icons">
+                    phone
+                </span>
+                +13456764598
+            </div>
+        </div>
+        <div class="nav-links">
+            <a class="topmenu" href="#about-me">About Me</a>
+            <a class="topmenu" href="#skills">Skills</a>
+            <a class="topmenu" href="#projects">Projects</a>
+            <a class="topmenu" href="#recommendations">Recommendations</a>
+        </div>
+    </nav>
+
+    <!-- About Me -->
+    <section id="about-me" class="container">
+      <div>
+        <img src="mypic.jpg" class="profile_image"/>
+      </div>
+
+      <div>
+          <h1>
+            Hi, I'm Abiola Oluwaremilekun Akintola <img src="html_finalprojimages/waving-hand.png" width="60px"/>
+          </h1>
+          <p>
+            I am a Full Stack Developer and a Full Stack Data Scientist. I am also interested in learning about AI, and I have worked on many projects across various platforms with different programming languages. 
+            Originally trained as a Building Engineer from the University of Lagos, Akoka, Lagos, Nigeria, I transitioned to coding due to my passion for technology and AI's potential to revolutionize the world.
+          </p>
+      </div>
+    </section>
+              
+    <!-- Skills -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="all_skills">
+          <div class="skill">
+              <img src="html.webp" alt="HTML Icon"/>
+              <h6>HTML</h6>
+              <p>2 years experience</p>
+          </div>
+
+          <div class="skill">
+              <img src="js.webp" alt="JavaScript Icon"/>
+              <h6>JavaScript</h6>
+              <p>3 years experience</p>
+          </div>
+
+          <div class="skill">
+              <img src="css.webp" alt="CSS Icon"/>
+              <h6>CSS</h6>
+              <p>2 years experience</p>
+          </div>
+
+          <div class="skill">
+              <img src="clojure.png" alt="Clojure Icon"/>
+              <h6>Clojure</h6>
+              <p>2 years experience</p>
+          </div>
+
+          <div class="skill">
+              <img src="ruby.webp" alt="Ruby Icon"/>
+              <h6>Ruby</h6>
+              <p>2 years experience</p>
+          </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="projects" id="projects">
+      <h2>Projects</h2>
+      <div id="projects-container" class="projects-container">
+        <div class="project-card">
+          <h3>Travel Website</h3>
+          <ul>
+            <li>Built a website for a travel agency, using the Bootstrap framework</li>
+          </ul>
+        </div>
+        <hr>
+        <div class="project-card">
+          <h3>Units Converter</h3>
+          <ul>
+            <li>Build a unit conversion website for those who need to get quick conversion values from metric to imperial and vice versa</li>
+          </ul>
+        </div>
+        <hr>
+        <div class="project-card">
+          <h3>Fashion Website</h3>
+          <ul>
+            <li>Built a Fashion website for an upcoming fashion designer</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recommendations -->
+    <section id="recommendations">
+      <h2>Recommendations</h2>
+      <div class="all_recommendations" id="all_recommendations">
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Abiola excels in web development, blending front-end finesse with robust backend skills. His expertise in HTML, CSS, JavaScript, and backend frameworks ensures scalable, user-friendly interfaces.
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Abiola is a skilled data scientist proficient in Python, Django, and data analysis. His analytical prowess and data-driven insights drive actionable recommendations for business growth.
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Abiola integrates frontend design seamlessly with backend functionalities. His attention to detail and data science skills enhance project performance and customer insights.
+          <span>&#8221;</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recommendation Form -->
+    <section id="contact">
+      <div class="flex_center">
+        <fieldset>
+          <legend class="introduction">Leave a Recommendation</legend>          
+          <input type="text" placeholder="Name (Optional)"> <br/>
+          <textarea id="new_recommendation" cols="50" rows="5" placeholder="Message"></textarea>
+          <div class="flex_center">
+            <button id="recommend_btn" onclick="addRecommendation()">Submit</button>
+          </div>
+        </fieldset>
+      </div>
+    </section>
+
+    <!-- Scroll to Top Button -->
+    <div class="iconbutton">
+      <a href="#top" aria-label="Scroll to top">
+        <span class="material-icons">
+          arrow_upward
+        </span>
+      </a>
+    </div>
+
+    <!-- Popup for Recommendation Submission -->
+    <div class="popup" id="popup">
+      <img src="html_finalprojimages/checkmark--outline.svg"/>
+      <h3>Recommendation submitted successfully.</h3>
+      <button onclick="hidePopup()">Ok</button>
+    </div>
+</body>
+</html>
